@@ -24,6 +24,7 @@
 		19483CE3258FD83400F4E50B /* UserTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19483CE2258FD83400F4E50B /* UserTypeEnum.swift */; };
 		19483CEC258FD95E00F4E50B /* StockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19483CEB258FD95E00F4E50B /* StockBuilder.swift */; };
 		19483CF4258FDCE700F4E50B /* StockTransationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19483CF3258FDCE700F4E50B /* StockTransationBuilder.swift */; };
+		19FF6C5B25915B8A00AFCE96 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6C5A25915B8A00AFCE96 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		19483CE2258FD83400F4E50B /* UserTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeEnum.swift; sourceTree = "<group>"; };
 		19483CEB258FD95E00F4E50B /* StockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockBuilder.swift; sourceTree = "<group>"; };
 		19483CF3258FDCE700F4E50B /* StockTransationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTransationBuilder.swift; sourceTree = "<group>"; };
+		19FF6C5A25915B8A00AFCE96 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		004341CF2590DC28002BDEA4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				19FF6C5825915B6200AFCE96 /* Extentions */,
 				004341D02590DC2D002BDEA4 /* Modules */,
 			);
 			path = Application;
@@ -209,6 +212,22 @@
 				19483CF3258FDCE700F4E50B /* StockTransationBuilder.swift */,
 			);
 			path = Builders;
+			sourceTree = "<group>";
+		};
+		19FF6C5825915B6200AFCE96 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				19FF6C5925915B6E00AFCE96 /* UIKit */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		19FF6C5925915B6E00AFCE96 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				19FF6C5A25915B8A00AFCE96 /* UIViewExtension.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +367,7 @@
 				19483C91258FC99100F4E50B /* AppDelegate.swift in Sources */,
 				19483CEC258FD95E00F4E50B /* StockBuilder.swift in Sources */,
 				19483C93258FC99100F4E50B /* SceneDelegate.swift in Sources */,
+				19FF6C5B25915B8A00AFCE96 /* UIViewExtension.swift in Sources */,
 				19483CDE258FD75F00F4E50B /* User.swift in Sources */,
 				19483CCD258FD17F00F4E50B /* Stock.swift in Sources */,
 				004341F62590DFBE002BDEA4 /* DashboardViewController.swift in Sources */,

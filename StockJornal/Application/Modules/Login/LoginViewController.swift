@@ -9,10 +9,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var topLoginView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("Estou no login")
+        topLoginView.roundCorners(corners: [.bottomLeft], radius: 500.0)
+        
     }
     
     
