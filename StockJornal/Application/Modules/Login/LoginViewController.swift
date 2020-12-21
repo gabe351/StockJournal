@@ -14,16 +14,13 @@ class LoginViewController: UIViewController {
 
         print("Estou no login")
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    @IBAction func login(_ sender: UIButton) {
+        let dashboardViewController = DashboardViewController()
+        dashboardViewController.modalPresentationStyle = .fullScreen
+        self.present(dashboardViewController, animated: true, completion: nil)
     }
-    */
+    
 
 }
