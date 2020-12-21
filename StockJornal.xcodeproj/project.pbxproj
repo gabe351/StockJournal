@@ -115,7 +115,6 @@
 		19483C8F258FC99100F4E50B /* StockJornal */ = {
 			isa = PBXGroup;
 			children = (
-				19483CCB258FD0FB00F4E50B /* Application */,
 				19483CCA258FD0F100F4E50B /* Model */,
 				19483C90258FC99100F4E50B /* AppDelegate.swift */,
 				19483C92258FC99100F4E50B /* SceneDelegate.swift */,
@@ -157,13 +156,6 @@
 				19483CD1258FD23200F4E50B /* StockTransaction.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		19483CCB258FD0FB00F4E50B /* Application */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		19483CD6258FD6FD00F4E50B /* Enum */ = {
