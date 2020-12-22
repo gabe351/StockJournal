@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRu-6Q-65y">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRu-6Q-65y">
                     <rect key="frame" x="16" y="744" width="382" height="30"/>
                     <state key="normal" title="ENTRAR"/>
                     <connections>
@@ -26,10 +26,10 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EG5-8g-raX">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvP-zq-qI0">
-                            <rect key="frame" x="0.0" y="30" width="320" height="140"/>
+                            <rect key="frame" x="0.0" y="30" width="320" height="90"/>
                             <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="43"/>
                             <color key="textColor" red="0.44705882352941173" green="0.70980392156862748" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
@@ -38,43 +38,55 @@
                     <constraints>
                         <constraint firstItem="OvP-zq-qI0" firstAttribute="leading" secondItem="EG5-8g-raX" secondAttribute="leading" id="6E1-EM-cBY"/>
                         <constraint firstAttribute="trailing" secondItem="OvP-zq-qI0" secondAttribute="trailing" constant="94" id="A07-T8-ONr"/>
-                        <constraint firstAttribute="height" constant="200" id="FOf-o2-Y6b"/>
+                        <constraint firstAttribute="height" constant="150" id="FOf-o2-Y6b"/>
                         <constraint firstAttribute="bottom" secondItem="OvP-zq-qI0" secondAttribute="bottom" constant="30" id="Nyt-Vb-S4X"/>
                         <constraint firstItem="OvP-zq-qI0" firstAttribute="top" secondItem="EG5-8g-raX" secondAttribute="top" constant="30" id="hfy-2M-mAP"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BcE-uf-hgW" userLabel="EmailView">
-                    <rect key="frame" x="20" y="320" width="374" height="100"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="kwf-VZ-uSl">
-                            <rect key="frame" x="8" y="44" width="344" height="34"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF6-5v-G41">
-                            <rect key="frame" x="8" y="16" width="42" height="20"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.44705882349999998" green="0.70980392160000005" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF6-5v-G41">
+                    <rect key="frame" x="35" y="252" width="341" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="oi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z73-bU-NGR">
+                    <rect key="frame" x="35" y="280" width="344" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05G-F1-OY6">
+                    <rect key="frame" x="35" y="301" width="344" height="3"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="ECo-ba-w0p"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.44705882352941173" green="0.70980392156862748" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="05G-F1-OY6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="1gl-7C-htV"/>
                 <constraint firstItem="EG5-8g-raX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4CC-cr-SHj"/>
                 <constraint firstItem="EG5-8g-raX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="57x-K1-qUK"/>
+                <constraint firstItem="aF6-5v-G41" firstAttribute="top" secondItem="EG5-8g-raX" secondAttribute="bottom" constant="102" id="6LJ-N7-N2r"/>
                 <constraint firstAttribute="trailing" secondItem="EG5-8g-raX" secondAttribute="trailing" id="9rA-jU-B94"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BRu-6Q-65y" secondAttribute="trailing" constant="16" id="NS9-tk-2tj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BRu-6Q-65y" secondAttribute="bottom" constant="136" id="Qe1-dJ-QXc"/>
+                <constraint firstItem="Z73-bU-NGR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="ZmP-oz-XHW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BRu-6Q-65y" secondAttribute="bottom" constant="88" id="d7W-A1-Ei7"/>
+                <constraint firstItem="Z73-bU-NGR" firstAttribute="top" secondItem="aF6-5v-G41" secondAttribute="bottom" constant="8" id="dtU-pm-KR1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aF6-5v-G41" secondAttribute="trailing" constant="38" id="f3K-QJ-LIa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z73-bU-NGR" secondAttribute="trailing" constant="35" id="hxK-cB-erO"/>
+                <constraint firstAttribute="trailing" secondItem="05G-F1-OY6" secondAttribute="trailing" constant="35" id="jt5-wj-aOR"/>
                 <constraint firstItem="BRu-6Q-65y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="l3f-pI-QTk"/>
+                <constraint firstItem="05G-F1-OY6" firstAttribute="top" secondItem="Z73-bU-NGR" secondAttribute="bottom" constant="2" id="l4M-rY-t6p"/>
+                <constraint firstItem="aF6-5v-G41" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="u26-36-QKc"/>
             </constraints>
             <point key="canvasLocation" x="-501.44927536231887" y="103.79464285714285"/>
         </view>
+        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="CtF-QF-u0d">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="-914" y="69"/>
+        </activityIndicatorView>
     </objects>
 </document>
